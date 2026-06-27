@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      title: 'Flutter Demo',
+      title: 'VibeCraft',
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
         fontFamily: 'Suwannaphum',

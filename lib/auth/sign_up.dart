@@ -297,7 +297,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     ),
                                   );
                                   SaveRecord.email = emailController.text;
-                                  SaveRecord.name = passwordController.text;
+                                  SaveRecord.name = fullNameController.text;
                                   SaveRecord.photo =
                                       'https://i.pinimg.com/736x/50/88/12/50881235e972feea21d85fc46bb5e301.jpg';
                                   _checkData(contex: context);
