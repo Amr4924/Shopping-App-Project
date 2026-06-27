@@ -10,7 +10,7 @@ class LodingScreen extends StatefulWidget {
 }
 
 class _LodingScreenState extends State<LodingScreen> {
-  bool lodingScreen = true;
+
   @override
   void initState() {
     super.initState();
@@ -19,21 +19,18 @@ class _LodingScreenState extends State<LodingScreen> {
 
   void _lodingScreen() async {
     await Future.delayed(Duration(seconds: 3));
-    setState(() {
-      lodingScreen = !lodingScreen;
 
-      if (!mounted) return;
+    if (!mounted) return;
 
-      Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => WelcomeScreen()),
-        (route) => false,
-      );
-    });
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => WelcomeScreen()),
+      (route) => false,
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: buildLodingScreen(lodingScreen: lodingScreen));
+    return Scaffold(body: buildLodingScreen());
   }
 }

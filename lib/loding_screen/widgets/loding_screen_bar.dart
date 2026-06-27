@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-Widget buildLodingScreen({required bool lodingScreen}) {
+Widget buildLodingScreen() {
   return Container(
     decoration: BoxDecoration(color: Colors.white),
     child: Center(
@@ -18,7 +18,7 @@ Widget buildLodingScreen({required bool lodingScreen}) {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TweenAnimationBuilder<double>(
-              tween: Tween<double>(begin: 0.0, end: !lodingScreen ? 0.0 : 0.99),
+              tween: Tween<double>(begin: 0.0, end: 0.99),
 
               duration: Duration(seconds: 3),
 
@@ -35,7 +35,7 @@ Widget buildLodingScreen({required bool lodingScreen}) {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TweenAnimationBuilder<int>(
-              tween: IntTween(begin: 0, end: !lodingScreen ? 0 : 100),
+              tween: IntTween(begin: 0, end: 100),
               duration: Duration(seconds: 3),
               builder: (context, value, child) {
                 return Text(
