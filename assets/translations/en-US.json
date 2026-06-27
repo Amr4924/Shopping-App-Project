@@ -5,6 +5,7 @@
     "sign_in":"Sign In",
     "sign_up":"Sign Up",
     "back_sign_in":"Go back to sign in",
+    "home":"Go Home",
 
     "full_name_labelText":"Full name",
     "full_name_hint":"Your full name (four parts)",

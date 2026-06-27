@@ -6,6 +6,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shop_project/auth/accounts.dart';
 import 'package:shop_project/auth/sign_in.dart';
+import 'package:shop_project/shopping_home/shopping_home_screen.dart';
+import 'package:shop_project/widgets/language_toggle_button.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -36,6 +38,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
   }
 
   void _checkData({required BuildContext contex}) async {
+    bool clictrue = true;
+
     setState(() {
       checkData = !checkData;
     });
@@ -50,7 +54,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       dialogType: DialogType.success,
       animType: AnimType.rightSlide,
       headerAnimationLoop: false,
-      btnOkText: tr("sign_in"),
+      btnOkText: tr("home"),
       title: tr('title_dialog'),
       desc: tr('description_dialog'),
 
@@ -60,19 +64,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
       ),
 
       btnOkOnPress: () {
+        clictrue = false;
         Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (context) => LoginScreen()),
+          MaterialPageRoute(builder: (context) => ShoppingHomeScreen()),
           (route) => false,
         );
       },
     ).show();
-
-    Navigator.pushAndRemoveUntil(
-      context,
-      MaterialPageRoute(builder: (context) => LoginScreen()),
-      (route) => false,
-    );
+    if (clictrue) {
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => ShoppingHomeScreen()),
+        (route) => false,
+      );
+    }
   }
 
   @override
@@ -290,6 +296,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                       password: password,
                                     ),
                                   );
+                                  SaveRecord.email = emailController.text;
+                                  SaveRecord.name = passwordController.text;
+                                  SaveRecord.photo =
+                                      'https://i.pinimg.com/736x/50/88/12/50881235e972feea21d85fc46bb5e301.jpg';
                                   _checkData(contex: context);
                                 } else {
                                   ScaffoldMessenger.of(context).showSnackBar(
