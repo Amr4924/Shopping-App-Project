@@ -1,0 +1,52 @@
+{
+    "welcome_app": "مرحبًا بكم في VibeCraft",
+    "title_apps": "VibeCraft",
+    "description":"اكتشف تجربة تسوق فريدة ومريحة من منزلك. كل ما تحتاجه وأكثر، كله في مكان واحد وبأعلى جودة.",
+    "sign_in": "تسجيل الدخول",
+    "sign_up": "إنشاء حساب",
+    "back_sign_in":"ارجع لتسجيل الدخول",
+
+    "full_name_labelText":"أسمك بالكامل",
+    "full_name_hint":"أسمك بالكامل (أربع اجزاء)",
+
+    "email_labelText":"البريد",
+    "email_hint":"email@gmail.com",
+
+    "password_labelText":"كلمة المرور",
+    "password_hint":"******",
+
+    "confirm_password_labelText":"تأكيد كلمة المرور",
+    "confirm_password_hint":"******",
+
+    "empty":"لا يمكنك ترك الحقل فارغاً.",
+    "not_capitalized":"يجب أن يكون الحرف الأول كبيراً.",
+    "correct email ":"يجب أن يتضمن الرمز @",
+    "password_length":"يجب أن يتضمن 6 أحرف على الأقل.",
+    "confirm_password":"يجب أن تتطابق مع كلمة المرور",
+
+    "title_dialog":"ناجح!",
+    "description_dialog":"تم إنشاء الحساب بنجاح..",
+
+    "snak_bar":"تأكد من إدخال البيانات بشكل صحيح.",
+    "snak_bar_action":"تمام",
+    "snak_bar_not_account":"لا توجد حسابات مسجلة.",
+    "snak_bar_action_not_account":"انشاء",
+    "snak_bar_Incorrect_data":"بيانات غير صحيحة",
+
+    "done":"تم",
+    "Successful_login":"تم تسجيل الدخول بنجاح 🥳",
+
+    "title_shopping_home":"منتجاتنا",
+    "products":"منتجات",
+
+    "snak_bar_cart":"تمت إضافة العنصر إلى عربة التسوق ✅",
+    "hot_offers":"عروض ساخنة 🔥",
+
+    "log_out":"تسجيل الخروج",
+
+    "welcome":"مرحبا",
+    "email":"البريد",
+    "password":"كلمه المرور",
+    "directing":"ليس لديك حساب!"
+
+}

@@ -1,0 +1,52 @@
+{
+    "welcome_app":"Welcome to VibeCraft ",
+    "title_apps":"VibeCraft",
+    "description":"Discover a unique and convenient shopping experience from home.Everything you need and more, all in one place with the highest quality.",
+    "sign_in":"Sign In",
+    "sign_up":"Sign Up",
+    "back_sign_in":"Go back to sign in",
+
+    "full_name_labelText":"Full name",
+    "full_name_hint":"Your full name (four parts)",
+
+    "email_labelText":"Email",
+    "email_hint":"email@gmail.com",
+
+    "password_labelText":"Password",
+    "password_hint":"******",
+
+    "confirm_password_labelText":"Confirm password",
+    "confirm_password_hint":"******",
+
+    "empty":"You cannot leave the field blank.",
+    "not_capitalized":"The first letter must be capitalized.",
+    "correct_email ":"Must include @",
+    "password_length":"It must include at least 6 characters.",
+    "confirm_password":"Must match password",
+
+    "title_dialog":"Successful!",
+    "description_dialog":"The account has been created successfully.",
+
+    "snak_bar":"Make sure to enter the data correctly.",
+    "snak_bar_action":"okay",
+    "snak_bar_not_account":"No registered accounts.",
+    "snak_bar_action_not_account":"Create",
+    "snak_bar_Incorrect_data":"Incorrect data",
+
+    "done":"done",
+    "Successful_login":"Successful login 🥳",
+
+    "title_shopping_home":"Our Products",
+    "products":"Products",
+
+    "snak_bar_cart":"Item added to the cart ✅",
+    "hot_offers":"Hot Offers 🔥",
+
+    "log_out":"Log Out",
+
+    "welcome":"Welcome",
+    "email":"Email",
+    "password":"Password",
+    "directing":"You do not have an account!"
+
+}
